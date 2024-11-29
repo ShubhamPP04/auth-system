@@ -1,0 +1,272 @@
+.auth-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.auth-illustration {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.auth-form-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.auth-form-content {
+  width: 100%;
+  max-width: 420px;
+}
+
+.auth-form-content h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.auth-subtitle {
+  color: #000;
+  font-size: 14px;
+  margin-bottom: 32px;
+  font-weight: normal;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 0;
+}
+
+.form-group.col-6 {
+  flex: 1;
+  min-width: calc(50% - 12px);
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 8px;
+  font-weight: normal;
+}
+
+.form-control {
+  width: 100%;
+  height: 44px;
+  padding: 10px 16px;
+  font-size: 14px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.form-control::placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #004D40;
+  box-shadow: none;
+}
+
+.auth-submit-btn {
+  width: 100%;
+  height: 44px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #004D40;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.auth-submit-btn:hover {
+  background-color: #00352E;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 14px;
+  color: #000;
+}
+
+.auth-link {
+  color: #FF6B00;
+  text-decoration: none;
+  font-weight: normal;
+  margin-left: 4px;
+}
+
+.auth-link:hover {
+  text-decoration: none;
+  color: #E65600;
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1441px) {
+  .auth-form-content {
+    max-width: 480px;
+  }
+}
+
+/* Desktop Styles */
+@media (max-width: 1440px) {
+  .auth-form-container {
+    padding: 32px;
+  }
+}
+
+/* Small Desktop/Laptop Styles */
+@media (max-width: 1024px) {
+  .auth-form-container {
+    padding: 24px;
+  }
+  
+  .auth-form-content {
+    max-width: 100%;
+  }
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  .auth-container {
+    flex-direction: column;
+  }
+
+  .auth-illustration {
+    min-height: auto;
+    height: 280px;
+    width: 100%;
+  }
+
+  .auth-form-container {
+    width: 100%;
+    padding: 24px 20px;
+    min-height: calc(100vh - 280px);
+  }
+
+  .auth-form-content {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .form-group.col-6 {
+    min-width: 100%;
+  }
+
+  .form-row {
+    gap: 16px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  .auth-illustration {
+    height: 200px;
+  }
+
+  .auth-form-container {
+    padding: 20px 16px;
+    min-height: calc(100vh - 200px);
+  }
+
+  .auth-form-content h1 {
+    font-size: 22px;
+  }
+
+  .auth-subtitle {
+    margin-bottom: 24px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-control {
+    font-size: 13px;
+  }
+
+  .form-control::placeholder {
+    font-size: 13px;
+  }
+
+  .auth-submit-btn {
+    font-size: 13px;
+  }
+
+  .auth-footer {
+    font-size: 13px;
+    margin-top: 20px;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 360px) {
+  .auth-illustration {
+    height: 160px;
+  }
+
+  .auth-form-container {
+    padding: 16px 12px;
+    min-height: calc(100vh - 160px);
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+}
+
+/* Handle Landscape Mode */
+@media (max-width: 768px) and (orientation: landscape) {
+  .auth-container {
+    flex-direction: row;
+  }
+
+  .auth-illustration {
+    width: 45%;
+    height: 100vh;
+  }
+
+  .auth-form-container {
+    width: 55%;
+    min-height: 100vh;
+    padding: 20px;
+  }
+}
+
+/* Handle Very Small Height */
+@media (max-height: 600px) {
+  .auth-form-container {
+    padding: 16px;
+  }
+
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  .auth-subtitle {
+    margin-bottom: 20px;
+  }
+} 
